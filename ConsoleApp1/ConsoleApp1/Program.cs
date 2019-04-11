@@ -13,9 +13,17 @@ namespace ConsoleApp1
             string beowulfTxt = System.IO.File.ReadAllText(@"U: \Users\732160\peterWeek6\peter week6\Beowulf.txt");
             Console.WriteLine(beowulfTxt);
             Console.WriteLine("===============================================================");
+            Console.WriteLine("===============================================================");
             Console.ReadLine();
-            var countingLines = System.IO.File.ReadLines(@"U: \Users\732160\peterWeek6\peter week6\Beowulf.txt").Count();
+
+            int countingLines = System.IO.File.ReadLines(@"U: \Users\732160\peterWeek6\peter week6\Beowulf.txt").Count();
             Console.WriteLine("Total number of lines in the text is "+countingLines);
+            Console.WriteLine("===============================================================");
+            Console.ReadLine();
+
+            int wordCount = beowulfTxt.Split().Length;
+            Console.WriteLine("Toal number of words in the text file is "+wordCount);
+            Console.WriteLine("===============================================================");
             Console.ReadLine();
         }
     }
