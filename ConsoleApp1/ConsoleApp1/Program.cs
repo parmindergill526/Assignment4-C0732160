@@ -50,6 +50,18 @@ namespace ConsoleApp1
             Console.WriteLine("Toal number of lines that contains word --Sea-- and --Fare-- " + lineCount);
             Console.WriteLine("==============================Hit Enter=================================");
             Console.ReadLine();
+
+            int lineCount2 = 0;
+            for (int i = 1; i < beowulfTxtArray.Length; i++)
+            {
+                if (beowulfTxtArray[i].ToUpper().Contains("FARE") && !beowulfTxtArray[i].ToUpper().Contains("WAR"))
+                {
+                    lineCount2++;
+                }
+            }
+            Console.WriteLine("Toal number of lines that contains word --Sea-- and not --War-- " + lineCount2);
+            Console.WriteLine("==============================Hit Enter=================================");
+            Console.ReadLine();
         }
     }
 }
