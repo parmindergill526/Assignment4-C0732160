@@ -25,6 +25,17 @@ namespace ConsoleApp1
             Console.WriteLine("Toal number of words in the text file is "+wordCount);
             Console.WriteLine("===============================================================");
             Console.ReadLine();
+
+            int characterCount = beowulfTxt.Length;
+            Console.WriteLine("Toal number of letters in the text file is " + characterCount);
+            Console.WriteLine("===============================================================");
+            Console.ReadLine();
+
+            double lPerWord;
+            lPerWord = (double)characterCount / (double)wordCount;
+            Console.WriteLine("Average number of letters per word is " + lPerWord);
+            Console.WriteLine("===============================================================");
+            Console.ReadLine();
         }
     }
 }
